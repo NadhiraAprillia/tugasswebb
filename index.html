@@ -1,0 +1,48 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+
+<div class="w3-container">
+	<img src="NCT2020.jpg" style="width:100%">
+	<center>
+	<h2>NCT UNIT IN 2020</h2>
+	<p>NCT 2020</p>
+</div>
+
+<div class="w3-bar w3-green">
+	<button class="w3-bar-item w3-button" onclick="openUnit('NCTU')">NCTU</button>
+	<button class="w3-bar-item w3-button" onclick="openUnit('NCT 127')">NCT 127</button>
+	<button class="w3-bar-item w3-button" onclick="openUnit('NCT DREAM')">NCT DREAM</button>
+	<button class="w3-bar-item w3-button" onclick="openUnit('WAYV')">WAYV</button>
+</div>
+
+<div id="NCTU" class="w3-container unit w3-animate-fading" style="display:none">
+	<center>
+	<img src="NCT world.jpg" style="width:50%">
+</div>
+
+<div id="NCT 127" class="w3-container unit w3-animate-bottom" style="display:none">
+	<center>
+	<img src="NCT127.jpg" style="width:50%">
+	<img src="127.jpeg" style="width:70%">
+</div>
+
+<div id="NCT DREAM" class="w3-container unit w3-animate-top" style="display:none">
+	<center>
+	<img src="NCTDREAM.jpg" style="width:50%">
+</div>
+
+<div id="WAYV" class="w3-container unit w3-animate-zoom" style="display:none">
+	<center>
+	<img src="wayv.jpg" style="width:50%">
+</div>
+
+<script>
+function openUnit(namaUnit) {
+var i;
+var x = document.getElementsByClassName("unit");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+ document.getElementById(namaUnit).style.display = "block";
+}
+</script>
